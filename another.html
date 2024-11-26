@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Order Form - Grocery Plans</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Order Form - Grocery Plans</h1>
+    <form id="orderForm" class="horizontal-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Delivery Address:</label>
+          <textarea id="address" name="address" required></textarea>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="plan">Select Plan:</label>
+          <select id="plan" name="plan" required>
+            <option value="basic" data-price="30" data-meals="10 meals (1 meal/day)">
+              Basic (Solo) - $30
+            </option>
+            <option value="balanced" data-price="60" data-meals="20 meals (2 meals/day)">
+              Balanced (2 People) - $60
+            </option>
+            <option value="family" data-price="120" data-meals="40 meals (4 meals/day)">
+              Family Plan (4) - $120
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="diet">Dietary Preference:</label>
+          <select id="diet" name="diet" required>
+            <option value="vegan">Vegan</option>
+            <option value="non_vegan">Non-Vegan</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="addons">Optional Add-ons:</label>
+          <div id="addons">
+            <input type="checkbox" id="extraProteins" name="addons" value="extraProteins" data-price="10">
+            <label for="extraProteins">Extra Proteins ($10)</label><br>
+            <input type="checkbox" id="snacks" name="addons" value="snacks" data-price="5">
+            <label for="snacks">Snacks ($5)</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <p><strong>Delivery Fee:</strong> $5</p>
+          <p><strong>Total Cost:</strong> $<span id="totalCost">0</span></p>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <button type="submit">Submit Order</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
