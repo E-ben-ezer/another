@@ -174,26 +174,39 @@ header.sticky{
 
 
 
-.big-head {
+/* styles.css */
+
+/* styles.css */
+/* body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+} */
+
+.header {
     text-align: center;
     padding: 20px;
-    background-color: lightblue;
-    border-radius: 5px;
-    color: white;
+    /* background-color: #5e5e72; */
+    color: #111;
+    margin-top: 15px;
+    border-radius: 2px;
 }
 
-.big-head h1 {
+.header h1 {
     margin: 0;
     font-size: 2rem;
 }
 
 .contact-section {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-around;
     padding: 20px;
     background-color: #fff;
+    flex-wrap: wrap;
 }
 
 .contact-section > div {
@@ -202,13 +215,14 @@ header.sticky{
     max-width: 400px;
     padding: 15px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #fafafa;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-section h2 {
-    color: #057bf9;
+    color: #007BFF;
+    margin-bottom: 15px;
 }
 
 .contact-section a {
@@ -264,7 +278,7 @@ header.sticky{
     color: white;
     padding: 15px;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .footer a {
@@ -275,59 +289,3 @@ header.sticky{
 .footer a:hover {
     text-decoration: underline;
 }
-
-/* 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-  } */
-  
-  /* .form-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-  }
-  
-  input, select, textarea, button {
-    width: 100%;
-    margin-top: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #218838;
-  }
-  
-  #addons {
-    margin-top: 10px;
-  }
-  
-  p {
-    margin-top: 15px;
-    font-weight: bold;
-  }
-   */
